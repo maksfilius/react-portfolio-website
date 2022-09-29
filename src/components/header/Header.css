@@ -1,0 +1,62 @@
+header {
+    height: 100vh;
+}
+
+.header_container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header_container h3 {
+    margin-top: 3rem;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+}
+
+.header_container h2{
+    text-transform: none;
+    padding: 1rem;
+    color: var(--color-2);
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem;
+}
+
+#wiggle {
+    animation: wiggle 2s linear infinite;
+}
+
+@keyframes wiggle {
+    0%, 7% {
+        transform: rotate(0)
+    }
+    15% {
+        transform: rotate(-15deg)
+    }
+    20% {
+        transform: rotate(10deg)
+    }
+    25% {
+        transform: rotate(-10deg)
+    }
+    30% {
+        transform: rotate(6deg)
+    }
+    35% {
+        transform: rotate(-4deg)
+    }
+    40%, 100% {
+        transform: rotate(0)
+    }
+}
